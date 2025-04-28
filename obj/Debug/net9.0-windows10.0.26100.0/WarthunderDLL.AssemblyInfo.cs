@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WarthunderDLL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1501e7ec4e5ac75926588954e02c68c0039315ed")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+50a5f0437bb7010e159ca31fc70bd1a72d90cc23")]
 [assembly: System.Reflection.AssemblyProductAttribute("WarthunderDLL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WarthunderDLL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
