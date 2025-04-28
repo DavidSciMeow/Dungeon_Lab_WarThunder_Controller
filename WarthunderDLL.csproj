@@ -7,11 +7,8 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+		<PackageReference Include="Meow.DGLab.PluginContracts" Version="1.0.1" />
 		<PackageReference Include="WarthunderTelemery" Version="1.0.0" />
-	</ItemGroup>
-
-	<ItemGroup>
-		<ProjectReference Include="..\PluginContracts\PluginContracts.csproj" />
 	</ItemGroup>
 
 </Project>

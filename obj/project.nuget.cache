@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "gv02f9Ligrc=",
+  "dgSpecHash": "t/j1O3hmDzM=",
   "success": true,
   "projectFilePath": "E:\\CoyoteLibCSharp\\WarthunderDLL\\WarthunderDLL.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\DavidMeow\\.nuget\\packages\\meow.dglab.plugincontracts\\1.0.1\\meow.dglab.plugincontracts.1.0.1.nupkg.sha512",
+    "C:\\Users\\DavidMeow\\.nuget\\packages\\meow.dglablib\\1.0.1\\meow.dglablib.1.0.1.nupkg.sha512",
     "C:\\Users\\DavidMeow\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\DavidMeow\\.nuget\\packages\\skiasharp\\3.116.1\\skiasharp.3.116.1.nupkg.sha512",
     "C:\\Users\\DavidMeow\\.nuget\\packages\\skiasharp.nativeassets.win32\\3.116.1\\skiasharp.nativeassets.win32.3.116.1.nupkg.sha512",

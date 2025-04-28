@@ -2,6 +2,38 @@
   "version": 3,
   "targets": {
     "net9.0-windows10.0.26100": {
+      "Meow.DGLab.PluginContracts/1.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Meow.DGLablib": "1.0.1",
+          "System.ComponentModel.Composition": "9.0.4"
+        },
+        "compile": {
+          "lib/net9.0-windows10.0.26100/DGLab.PluginContracts.dll": {}
+        },
+        "runtime": {
+          "lib/net9.0-windows10.0.26100/DGLab.PluginContracts.dll": {}
+        }
+      },
+      "Meow.DGLablib/1.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.3"
+        },
+        "compile": {
+          "lib/net9.0-windows10.0.26100/DGLablib.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0-windows10.0.26100/DGLablib.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
       "Newtonsoft.Json/13.0.3": {
         "type": "package",
         "compile": {
@@ -84,40 +116,37 @@
             "related": ".xml"
           }
         }
-      },
-      "Meow.DGLab.PluginContracts/1.0.1": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v9.0",
-        "dependencies": {
-          "Meow.DGLablib": "1.0.1",
-          "System.ComponentModel.Composition": "9.0.4"
-        },
-        "compile": {
-          "bin/placeholder/Meow.DGLab.PluginContracts.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Meow.DGLab.PluginContracts.dll": {}
-        }
-      },
-      "Meow.DGLablib/1.0.1": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v9.0",
-        "dependencies": {
-          "Newtonsoft.Json": "13.0.3"
-        },
-        "compile": {
-          "bin/placeholder/Meow.DGLablib.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Meow.DGLablib.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.WindowsDesktop.App.WPF"
-        ]
       }
     }
   },
   "libraries": {
+    "Meow.DGLab.PluginContracts/1.0.1": {
+      "sha512": "9fsFezdlF4EmWL56uyXdOPaJjInv8OoDXpYL7jBZRXsa5JNIgbQ3RlMdhf31C9to/kIKRZhClsIBMzp4UUt6+w==",
+      "type": "package",
+      "path": "meow.dglab.plugincontracts/1.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Square.PNG",
+        "lib/net9.0-windows10.0.26100/DGLab.PluginContracts.dll",
+        "meow.dglab.plugincontracts.1.0.1.nupkg.sha512",
+        "meow.dglab.plugincontracts.nuspec"
+      ]
+    },
+    "Meow.DGLablib/1.0.1": {
+      "sha512": "ovTcNidm4AvAaKQ24YiAzIk7k+IAPqZCIamLQY9vLtJ4GK07VZ3WfpzYw1OOV9x57PQR6oR9zdS2f1myqwgt/A==",
+      "type": "package",
+      "path": "meow.dglablib/1.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net9.0-windows10.0.26100/DGLablib.dll",
+        "lib/net9.0-windows10.0.26100/DGLablib.xml",
+        "meow.dglablib.1.0.1.nupkg.sha512",
+        "meow.dglablib.nuspec"
+      ]
+    },
     "Newtonsoft.Json/13.0.3": {
       "sha512": "HrC5BXdl00IP9zeV+0Z848QWPAoCr9P3bDEZguI+gkLcBKAOxix/tLEAAHC+UvDNPv4a2d18lOReHMOagPa+zQ==",
       "type": "package",
@@ -263,16 +292,6 @@
         "warthundertelemery.1.0.0.nupkg.sha512",
         "warthundertelemery.nuspec"
       ]
-    },
-    "Meow.DGLab.PluginContracts/1.0.1": {
-      "type": "project",
-      "path": "../PluginContracts/PluginContracts.csproj",
-      "msbuildProject": "../PluginContracts/PluginContracts.csproj"
-    },
-    "Meow.DGLablib/1.0.1": {
-      "type": "project",
-      "path": "../DGLablib/DGLablib.csproj",
-      "msbuildProject": "../DGLablib/DGLablib.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -313,11 +332,7 @@
       "frameworks": {
         "net9.0-windows10.0.26100": {
           "targetAlias": "net9.0-windows10.0.26100.0",
-          "projectReferences": {
-            "E:\\CoyoteLibCSharp\\PluginContracts\\PluginContracts.csproj": {
-              "projectPath": "E:\\CoyoteLibCSharp\\PluginContracts\\PluginContracts.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -336,6 +351,10 @@
       "net9.0-windows10.0.26100": {
         "targetAlias": "net9.0-windows10.0.26100.0",
         "dependencies": {
+          "Meow.DGLab.PluginContracts": {
+            "target": "Package",
+            "version": "[1.0.1, )"
+          },
           "WarthunderTelemery": {
             "target": "Package",
             "version": "[1.0.0, )"

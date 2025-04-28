@@ -6,7 +6,6 @@ using System.ComponentModel.Composition;
 using System.Diagnostics;
 using System.Threading;
 using System.Threading.Tasks;
-using Windows.Media.Capture;
 
 namespace WarthunderDLL
 {
@@ -66,7 +65,10 @@ namespace WarthunderDLL
                                 is_died = 10;
                                 intensity = init_;
                             }
-                            Debug.WriteLine(is_died);
+                        }
+                        else
+                        {
+                            is_died = 0;
                         }
                     }
                 }
