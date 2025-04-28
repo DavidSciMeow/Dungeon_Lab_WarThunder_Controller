@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>WarthunderDLL</id>
+    <version>1.0.0</version>
+    <authors>WarthunderDLL</authors>
+    <description>Package Description</description>
+    <repository type="git" commit="bd9f1123434af7c8633fadd311ec6e04923527ff" />
+    <dependencies>
+      <group targetFramework="net9.0-windows10.0.26100">
+        <dependency id="DGLab.PluginContracts" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="WarthunderTelemery" version="1.0.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="E:\CoyoteLibCSharp\WarthunderDLL\bin\Debug\net9.0-windows10.0.26100.0\WarthunderDLL.dll" target="lib\net9.0-windows10.0.26100\WarthunderDLL.dll" />
+  </files>
+</package>
