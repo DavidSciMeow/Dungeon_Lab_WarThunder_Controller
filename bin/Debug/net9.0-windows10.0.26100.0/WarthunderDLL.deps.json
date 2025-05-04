@@ -6,12 +6,10 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v9.0": {
-      "WarthunderDLL/1.0.0": {
+      "WarthunderDLL/2.0.0": {
         "dependencies": {
           "Meow.DGLab.PluginContracts": "1.0.1",
           "WarthunderTelemery": "1.0.0",
-          "DGLab.PluginContracts": "1.0.1.0",
-          "DGLablib": "1.0.1.0",
           "runtimepack.Microsoft.Windows.SDK.NET.Ref": "10.0.26100.57"
         },
         "runtime": {
@@ -27,6 +25,29 @@
           "WinRT.Runtime.dll": {
             "assemblyVersion": "2.2.0.0",
             "fileVersion": "2.2.0.48161"
+          }
+        }
+      },
+      "Meow.DGLab.PluginContracts/1.0.1": {
+        "dependencies": {
+          "Meow.DGLablib": "1.0.1",
+          "System.ComponentModel.Composition": "9.0.4"
+        },
+        "runtime": {
+          "lib/net9.0-windows10.0.26100/DGLab.PluginContracts.dll": {
+            "assemblyVersion": "1.0.1.0",
+            "fileVersion": "1.0.1.0"
+          }
+        }
+      },
+      "Meow.DGLablib/1.0.1": {
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.3"
+        },
+        "runtime": {
+          "lib/net9.0-windows10.0.26100/DGLablib.dll": {
+            "assemblyVersion": "1.0.1.0",
+            "fileVersion": "1.0.1.0"
           }
         }
       },
@@ -87,49 +108,11 @@
             "fileVersion": "1.0.0.0"
           }
         }
-      },
-      "Meow.DGLab.PluginContracts/1.0.1": {
-        "dependencies": {
-          "Meow.DGLablib": "1.0.1",
-          "System.ComponentModel.Composition": "9.0.4"
-        },
-        "runtime": {
-          "DGLab.PluginContracts.dll": {
-            "fileVersion": "0.0.0.0"
-          }
-        }
-      },
-      "Meow.DGLablib/1.0.1": {
-        "dependencies": {
-          "Newtonsoft.Json": "13.0.3"
-        },
-        "runtime": {
-          "DGLablib.dll": {
-            "assemblyVersion": "1.0.1.0",
-            "fileVersion": "1.0.1.0"
-          }
-        }
-      },
-      "DGLab.PluginContracts/1.0.1.0": {
-        "runtime": {
-          "DGLab.PluginContracts.dll": {
-            "assemblyVersion": "1.0.1.0",
-            "fileVersion": "1.0.1.0"
-          }
-        }
-      },
-      "DGLablib/1.0.1.0": {
-        "runtime": {
-          "DGLablib.dll": {
-            "assemblyVersion": "1.0.1.0",
-            "fileVersion": "1.0.1.0"
-          }
-        }
       }
     }
   },
   "libraries": {
-    "WarthunderDLL/1.0.0": {
+    "WarthunderDLL/2.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -138,6 +121,20 @@
       "type": "runtimepack",
       "serviceable": false,
       "sha512": ""
+    },
+    "Meow.DGLab.PluginContracts/1.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9fsFezdlF4EmWL56uyXdOPaJjInv8OoDXpYL7jBZRXsa5JNIgbQ3RlMdhf31C9to/kIKRZhClsIBMzp4UUt6+w==",
+      "path": "meow.dglab.plugincontracts/1.0.1",
+      "hashPath": "meow.dglab.plugincontracts.1.0.1.nupkg.sha512"
+    },
+    "Meow.DGLablib/1.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ovTcNidm4AvAaKQ24YiAzIk7k+IAPqZCIamLQY9vLtJ4GK07VZ3WfpzYw1OOV9x57PQR6oR9zdS2f1myqwgt/A==",
+      "path": "meow.dglablib/1.0.1",
+      "hashPath": "meow.dglablib.1.0.1.nupkg.sha512"
     },
     "Newtonsoft.Json/13.0.3": {
       "type": "package",
@@ -173,26 +170,6 @@
       "sha512": "sha512-TQsb9hqoUJ13Sz/gvaliAxR59NiTbNWcQ/hy53H6E69fVAzZD81xw653jhdblBOOghOimb35l/2hzZ60aJnzOw==",
       "path": "warthundertelemery/1.0.0",
       "hashPath": "warthundertelemery.1.0.0.nupkg.sha512"
-    },
-    "Meow.DGLab.PluginContracts/1.0.1": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Meow.DGLablib/1.0.1": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "DGLab.PluginContracts/1.0.1.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "DGLablib/1.0.1.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
     }
   }
 }

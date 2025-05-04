@@ -11,13 +11,13 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("WarthunderDLL")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("@2025 Electronicute")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
-[assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6f4143d154d84173fcd35e60c2f2edfdf25f7c3a")]
+[assembly: System.Reflection.AssemblyFileVersionAttribute("2.0.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("2.0.0+8d19d1bcb943f168b77010081efad915785be7ab")]
 [assembly: System.Reflection.AssemblyProductAttribute("WarthunderDLL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WarthunderDLL")]
-[assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
+[assembly: System.Reflection.AssemblyVersionAttribute("2.0.0.0")]
 [assembly: System.Runtime.Versioning.TargetPlatformAttribute("Windows10.0.26100.0")]
 [assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("Windows10.0.26100.0")]
 

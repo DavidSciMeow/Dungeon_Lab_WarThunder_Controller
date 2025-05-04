@@ -1,9 +1,11 @@
 ﻿using DGLablib;
 using DGLablib.PluginContracts;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.Composition;
 using System.Diagnostics;
+using System.IO;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -21,10 +23,16 @@ namespace WarthunderDLL
             { "成员组增益上限", "20" },
             { "成员组死亡增加", "100" },
         };
-
+        public string FileName = "settings.json";
 
         public void Init(CoyoteDeviceV3 dev, CancellationToken ctl)
         {
+            if(File.Exists(Path.Combine(AppContext.BaseDirectory, "Plugins", FileName)))
+            {
+                var dic = JsonConvert.DeserializeObject<Dictionary<string, string>>(File.ReadAllText(Path.Combine(AppContext.BaseDirectory, "Plugins", FileName)));
+                foreach (var (k, v) in dic ?? []) Settings[k] = v;
+            }
+
             var init_ = byte.Parse(Settings["默认电压大小"]);
             byte intensity = init_;
             int is_died = 0;
@@ -92,6 +100,10 @@ namespace WarthunderDLL
             }
         }
 
-        public void Stop(CoyoteDeviceV3 dev, CancellationToken ctl) => dev.Stop();
+        public void Stop(CoyoteDeviceV3 dev, CancellationToken ctl)
+        {
+            File.WriteAllText(Path.Combine(AppContext.BaseDirectory, "Plugins", FileName), JsonConvert.SerializeObject(Settings));
+            dev.Stop();
+        }
     }
 }

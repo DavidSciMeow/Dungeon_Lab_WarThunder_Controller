@@ -12,9 +12,6 @@ E:\CoyoteLibCSharp\WarthunderDLL\bin\Debug\net9.0-windows10.0.26100.0\Microsoft.
 E:\CoyoteLibCSharp\WarthunderDLL\bin\Debug\net9.0-windows10.0.26100.0\WinRT.Runtime.dll
 E:\CoyoteLibCSharp\WarthunderDLL\bin\Debug\net9.0-windows10.0.26100.0\DGLab.PluginContracts.dll
 E:\CoyoteLibCSharp\WarthunderDLL\bin\Debug\net9.0-windows10.0.26100.0\DGLablib.dll
-E:\CoyoteLibCSharp\WarthunderDLL\bin\Debug\net9.0-windows10.0.26100.0\DGLab.PluginContracts.pdb
-E:\CoyoteLibCSharp\WarthunderDLL\bin\Debug\net9.0-windows10.0.26100.0\DGLablib.pdb
-E:\CoyoteLibCSharp\WarthunderDLL\bin\Debug\net9.0-windows10.0.26100.0\DGLablib.xml
 E:\CoyoteLibCSharp\WarthunderDLL\obj\Debug\net9.0-windows10.0.26100.0\WarthunderDLL.csproj.AssemblyReference.cache
 E:\CoyoteLibCSharp\WarthunderDLL\obj\Debug\net9.0-windows10.0.26100.0\WarthunderDLL.GeneratedMSBuildEditorConfig.editorconfig
 E:\CoyoteLibCSharp\WarthunderDLL\obj\Debug\net9.0-windows10.0.26100.0\WarthunderDLL.AssemblyInfoInputs.cache
