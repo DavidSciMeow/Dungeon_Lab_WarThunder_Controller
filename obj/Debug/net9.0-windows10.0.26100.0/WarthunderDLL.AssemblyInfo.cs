@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("@2025 Electronicute")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("2.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("2.0.0+8d19d1bcb943f168b77010081efad915785be7ab")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("2.0.0+21c8729eec9c88396a8cb63b9e19c5a258f3be05")]
 [assembly: System.Reflection.AssemblyProductAttribute("WarthunderDLL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WarthunderDLL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("2.0.0.0")]

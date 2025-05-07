@@ -33,10 +33,12 @@ namespace WarthunderDLL
                 foreach (var (k, v) in dic ?? []) Settings[k] = v;
             }
 
+            dev.SetWaveBFAsync(new WaveformBF(200, 200, 200, 200, 200, 200));
+
             var init_ = byte.Parse(Settings["默认电压大小"]);
             byte intensity = init_;
             int is_died = 0;
-
+            
             dev.Start();
 
             while (true)
@@ -61,6 +63,7 @@ namespace WarthunderDLL
                     if(call != 0)
                     {
                         intensity = (byte)(init_ + (1 - cr / (double)call) * byte.Parse(Settings["成员组增益上限"]));
+                        
                         if (isdrisurv && isgunsurv)
                         {
                             is_died++;
@@ -83,8 +86,20 @@ namespace WarthunderDLL
 
                 {
                     var frequency = int.Parse(Settings["波形频率(ms)"]);
-                    byte _frequency = frequency > 255 ? (byte)255 : (byte)frequency;
-                    byte _intensity = intensity > 255 ? (byte)255 : intensity;
+                    byte _frequency;
+                    if (frequency > 240)
+                    {
+                        _frequency = 240;
+                    }
+                    else if(frequency < 10)
+                    {
+                        _frequency = 10;
+                    }
+                    else
+                    {
+                        _frequency = (byte)frequency;
+                    }
+                    byte _intensity = intensity > 100 ? (byte)100 : intensity;
                     var k = new WaveformV3(_intensity, [_frequency, _frequency, _frequency, _frequency]);
                     dev.WaveNow = k;
                 }
